@@ -1,0 +1,21 @@
+@import './normalize.css';
+@import './variables.css';
+@import './font.css';
+@import './common.css';
+@import './header.css';
+@import './hero.css';
+
+.mainWrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    '. header .'
+    '. hero .'
+    '. heroSecond .';
+    grid-template-columns: 92px 1fr 92px;
+
+    font-family: var(--f-reg);
+    color: var(--c-midnight);
+} 

@@ -4,6 +4,8 @@
 @import './common.css';
 @import './header.css';
 @import './hero.css';
+@import './courses.css';
+@import './benefits.css';
 
 .mainWrapper {
     width: 100%;
@@ -13,7 +15,9 @@
     grid-template-areas: 
     '. header .'
     '. hero .'
-    '. heroSecond .';
+    '. courses .'
+    '. heroSecond .'
+    '. benefits .';
     grid-template-columns: 92px 1fr 92px;
 
     font-family: var(--f-reg);

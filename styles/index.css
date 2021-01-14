@@ -6,20 +6,24 @@
 @import './hero.css';
 @import './courses.css';
 @import './benefits.css';
+@import './request.css';
+@import './footer.css';
 
 .mainWrapper {
+    --side-gap: 92px;
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
     display: grid;
+    box-sizing: border-box;
     grid-template-areas: 
     '. header .'
     '. hero .'
     '. courses .'
     '. heroSecond .'
-    '. benefits .';
-    grid-template-columns: 92px 1fr 92px;
-
+    '. benefits .'
+    'request request request'
+    '. footer .';
+    grid-template-columns: var(--side-gap) minmax(1200px, 2560px) var(--side-gap);
+    grid-template-rows: 124px 708px 1fr 708px 0.8fr 956px 220px;
     font-family: var(--f-reg);
     color: var(--c-midnight);
-} 
+}

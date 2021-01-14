@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Ozon New Skills</title>
 </head>
@@ -35,22 +35,27 @@
             <div class="courses__containerCards">
                 <div class="courses__card">
                     <div class="courses__cardImage courses__cardImage-analyst"></div>
-                    <h3 class="courses__cardTitle">Бизнес-аналитика</h3>
-                    <p class="courses__cardText">Изучение основных инструментов и механизмов бизнес-аналитики</p>
-                    <a href="#" class="courses__cardLink">Узнать больше</a>
+                    <div class="courses__cardContent">
+                        <h3 class="courses__cardTitle">Бизнес-аналитика</h3>
+                        <p class="courses__cardText">Изучение основных инструментов и механизмов бизнес-аналитики</p>
+                        <a href="#" class="courses__cardLink">Узнать больше</a>
+                    </div>
                 </div>
-
                 <div class="courses__card">
                     <div class="courses__cardImage courses__cardImage-python"></div>
-                    <h3 class="courses__cardTitle">Python 18+</h3>
-                    <p class="courses__cardText">Основы программирования и знакомство с возможностями языка Python</p>
-                    <a href="#" class="courses__cardLink">Узнать больше</a>
+                    <div class="courses__cardContent">
+                        <h3 class="courses__cardTitle">Python 18+</h3>
+                        <p class="courses__cardText">Основы программирования и знакомство с возможностями языка Python</p>
+                        <a href="#" class="courses__cardLink">Узнать больше</a>
+                    </div>
                 </div>
                 <div class="courses__card">
                     <div class="courses__cardImage courses__cardImage-frontend"></div>
-                    <h3 class="courses__cardTitle">Frontend-разработчик</h3>
-                    <p class="courses__cardText">Курс для новичков, которые хотят начать свой путь в Frontend-разработке</p>
-                    <a href="#" class="courses__cardLink">Узнать больше</a>
+                    <div class="courses__cardContent">
+                        <h3 class="courses__cardTitle">Frontend-разработчик</h3>
+                        <p class="courses__cardText">Курс для новичков, которые хотят начать свой путь в Frontend-разработке</p>
+                        <a href="#" class="courses__cardLink">Узнать больше</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,6 +99,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="request">
+            <h2 class="request__title">Оставить заявку<br>на бесплатное пробное занятие</h2>
+            <div class="request__form">
+                <input type="text" class="input input--valid request__formElement" placeholder="Город" value="Москва">
+                <input type="tel" class="input input--valid request__formElement" placeholder="Введите номер телефона" value="+ 7">
+                <input type="email" class="input input--valid request__formElement" placeholder="Введите ваш email" value="ons@ozon.ru">
+                <input type="text" class="input input--valid request__formElement" placeholder="Имя и Фамилия" value="A Andrei">
+
+                <input type="text" class="input input--valid" placeholder="Ваш комментарий">
+            </div>
+            <button class="button">Отправить заявку</button>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__mainLogo"><img src="./img/logo.svg" alt="" /></div>
+            <div class="footer__contacts">© 2019 ООО «Интернет Решения». Все права защищены.<br>
+                Москва, Пресненская наб., 10, блок С<br>
+                ons@ozon.ru</div>
+            <div class="footer__socialIcon">
+                <div class="footer__socialIcon-item"><a href="#"><img src="./img/footer__socialButton-insta.svg" alt=""></a></div>
+                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-fb.svg" alt=""></div>
+                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-vk.svg" alt=""></div>
+                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-Youtube.svg" alt=""></div>
+            </div>
+            <div class="footer__ozonLogo"><img src="./img/footer__ozonLogo.svg" alt=""></div>
+        </footer>
     </div>
 </body>
 

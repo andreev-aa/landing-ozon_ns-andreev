@@ -1,0 +1,37 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    min-height: 220px;
+    align-items: center;
+}
+
+.footer__mainLogo {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 181px;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    font-family: var(--f-reg);
+    color: var(--c-midnight);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+}
+
+.footer__socialIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+}
+
+.footer__ozonLogo {
+    display: flex;
+    align-items: center;
+    width: 107px;
+}

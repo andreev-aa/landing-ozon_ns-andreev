@@ -12,8 +12,11 @@
 .mainWrapper {
     --side-gap: 92px;
     width: 100%;
+    /* без maxw ведет себя лучше чем по макету + фон формы правильно встает
+     max-width: 1600px;
+    margin: 0 auto; */
     display: grid;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     grid-template-areas: 
     '. header .'
     '. hero .'
@@ -22,8 +25,21 @@
     '. benefits .'
     'request request request'
     '. footer .';
-    grid-template-columns: var(--side-gap) minmax(1200px, 2560px) var(--side-gap);
-    grid-template-rows: 124px 708px 1fr 708px 0.8fr 956px 220px;
+    /* grid-template-columns: var(--side-gap) minmax(1200px, 2560px) var(--side-gap); */
+    grid-template-columns: var(--side-gap) 1fr var(--side-gap);
+    /* grid-template-rows: 124px 708px 1fr 708px 1fr 956px 220px; */
     font-family: var(--f-reg);
     color: var(--c-midnight);
+}
+
+@media (max-width: 1508px) {
+    .mainWrapper {
+        --side-gap: 46px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .mainWrapper {
+        --side-gap: 0;
+    }
 }

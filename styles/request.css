@@ -1,6 +1,7 @@
 .request {
   grid-area: request;
-  min-height: 956px;
+  padding: 80px 0;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,4 +30,33 @@
 
 .request__formElement:last-of-type {
   margin-bottom: 32px;
+}
+
+@media (max-width: 1040px) {
+  .request {
+    padding: 56px 16px;
+  }
+  .request__form {
+    margin-bottom: 36px;
+  }
+  .request__title {
+    margin: 0 0 36px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button__footer {
+    width: 100%;
+  }
+  .request__form {
+    max-width: 688px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .request__form {
+    max-width: 448px;
+  } */
 }

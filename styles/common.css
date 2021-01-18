@@ -1,5 +1,6 @@
 .button {
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     height: 64px;
@@ -56,7 +57,7 @@
     line-height: 24px;
     background-color: var(--c-white);
 }
- 
+
 .select__dropdown {
     display: none;
     position: absolute;
@@ -97,4 +98,3 @@
 .select__icon-opened {
 transform: rotate(180deg);
 }
-

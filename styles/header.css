@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   min-height: 124px;
+  box-sizing: border-box;
   align-items: center;
 }
 
@@ -29,4 +30,50 @@
   font-family: var(--f-bold);
   font-size: 22px;
   line-height: 26px;
+}
+
+.header-menuButton {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .header__navigation {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header__tagline {
+    display: none;
+  }
+
+  .header {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    min-height: 76px;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header-menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .header__tagline {
+    display: none;
+  }
+
+  .header__mainLogoImage {
+    width: 120px;
+    height: 38px;
+  }
 }

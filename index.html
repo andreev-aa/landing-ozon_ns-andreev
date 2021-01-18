@@ -11,14 +11,16 @@
 <body>
     <div class="mainWrapper">
         <header class="header">
-            <div class="header__mainLogo"><img src="./img/logo.svg" alt="" /></div>
+            <div class="header__mainLogo"><img class="header__mainLogoImage" src="./img/logo.svg" alt="" /></div>
             <nav class="header__navigation">
                 <a href="" class="header__navigationLink">Бизнес-аналитика</a>
                 <a href="" class="header__navigationLink">Phyton 18+</a>
                 <a href="" class="header__navigationLink">Frontend-разработчик</a>
             </nav>
             <div class="header__tagline">Это Вам не школа!</div>
+            <div class="header-menuButton"><img src="./img/header-menu-button.svg" alt=""></div>
         </header>
+
         <section class="hero hero--main">
             <div class="hero__info">
                 <h2 class="hero__infoTitle">Ozon New Skills</h2>
@@ -30,9 +32,21 @@
             </div>
         </section>
 
+        <section class="heroMobile heroMobile--main">
+            <div class="hero--main"></div>
+            <div class="hero__info">
+                <h2 class="hero__infoTitle">Ozon New Skills</h2>
+                <p class="hero__infoText">
+                    Поможем получить и прокачать навыки, которые будут полезны в текущей
+                    карьере или дадут старт новой!
+                </p>
+                <button class="button button__hero">Выбрать курс</button>
+            </div>
+        </section>
+
         <section class="courses">
             <h2 class="courses__title">Наши курсы</h2>
-            <div class="courses__containerCards">
+            <div class="courses__container">
                 <div class="courses__card">
                     <div class="courses__cardImage courses__cardImage-analyst"></div>
                     <div class="courses__cardContent">
@@ -71,9 +85,21 @@
             </div>
         </section>
 
+        <section class="heroMobile heroMobile--second">
+            <div class="hero--second"></div>
+            <div class="hero__info">
+                <h2 class="hero__infoTitle">Ozon New Skills</h2>
+                <p class="hero__infoText">
+                    Поможем получить и прокачать навыки, которые будут полезны в текущей
+                    карьере или дадут старт новой!
+                </p>
+                <button class="button button__hero">Выбрать курс</button>
+            </div>
+        </section>
+
         <section class="benefits">
             <div class="benefits__title">Преимущества</div>
-            <div class="benefits__containerCards">
+            <div class="benefits__container">
                 <div class="benefits__card">
                     <div class="benefits__cardImage benefits__cardImage-lidership"></div>
                     <h3 class="benefits__cardTitle">Лидерство</h3>
@@ -110,19 +136,20 @@
 
                 <input type="text" class="input input--valid" placeholder="Ваш комментарий">
             </div>
-            <button class="button">Отправить заявку</button>
+            <button class="button button__footer">Отправить заявку</button>
         </section>
 
         <footer class="footer">
             <div class="footer__mainLogo"><img src="./img/logo.svg" alt="" /></div>
+            <div class="footer__tagline">Это Вам не школа!</div>
             <div class="footer__contacts">© 2019 ООО «Интернет Решения». Все права защищены.<br>
                 Москва, Пресненская наб., 10, блок С<br>
                 ons@ozon.ru</div>
             <div class="footer__socialIcon">
-                <div class="footer__socialIcon-item"><a href="#"><img src="./img/footer__socialButton-insta.svg" alt=""></a></div>
-                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-fb.svg" alt=""></div>
-                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-vk.svg" alt=""></div>
-                <div class="footer__socialIcon-item"><img src="./img/footer__socialButton-Youtube.svg" alt=""></div>
+                <div class="footer__socialIcon-item"><a href="#"><img class="footer__socialIcon-image" src="./img/footer__socialButton-insta.svg" alt=""></a></div>
+                <div class="footer__socialIcon-item"><a href="#"><img class="footer__socialIcon-image" src="./img/footer__socialButton-fb.svg" alt=""></a></div>
+                <div class="footer__socialIcon-item"><a href="#"><img class="footer__socialIcon-image" src="./img/footer__socialButton-vk.svg" alt=""></a></div>
+                <div class="footer__socialIcon-item"><a href="#"><img class="footer__socialIcon-image" src="./img/footer__socialButton-Youtube.svg" alt=""></a></div>
             </div>
             <div class="footer__ozonLogo"><img src="./img/footer__ozonLogo.svg" alt=""></div>
         </footer>

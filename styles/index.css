@@ -16,7 +16,6 @@
      max-width: 1600px;
     margin: 0 auto; */
     display: grid;
-    /* box-sizing: border-box; */
     grid-template-areas: 
     '. header .'
     '. hero .'
@@ -25,9 +24,7 @@
     '. benefits .'
     'request request request'
     '. footer .';
-    /* grid-template-columns: var(--side-gap) minmax(1200px, 2560px) var(--side-gap); */
     grid-template-columns: var(--side-gap) 1fr var(--side-gap);
-    /* grid-template-rows: 124px 708px 1fr 708px 1fr 956px 220px; */
     font-family: var(--f-reg);
     color: var(--c-midnight);
 }

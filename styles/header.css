@@ -37,6 +37,17 @@
   cursor: pointer;
 }
 
+.header__mainLogoImage:hover {
+  animation: rotate 1s ease-in 0s 1 normal none;
+}
+
+@keyframes rotate {
+  0% {transform: rotateY(0deg);}
+  25% {transform: rotateY(45deg);}
+  50% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+
 @media (max-width: 1200px) {
   .header__navigation {
     max-width: 460px;

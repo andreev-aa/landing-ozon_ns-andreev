@@ -107,7 +107,6 @@
 
   .courses__container {
     padding-top: 36px;
-    justify-content: start;
   }
 
   .courses__card {
@@ -134,5 +133,11 @@
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .courses__container {
+    justify-content: start;
   }
 }
